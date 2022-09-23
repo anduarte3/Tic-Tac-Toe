@@ -1,0 +1,43 @@
+body {
+    margin: 30px;
+    background-color: gray;
+}
+h1 {
+    font-size: 72px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.container {
+    display: grid;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    grid-template-columns: 150px 150px 150px;
+    grid-template-rows: 150px 150px 150px;
+    background-color: black;
+    width: 470px;
+}
+.container > .board-style {
+    display: grid;
+    place-items: center;
+    padding: 10px;
+    background-color: lightcyan;
+    font-size: 24px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+}
+.board-style:hover {
+    background-color: darkcyan;
+}
+#win-message {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 15px;
+}
+#win-message > #start-button {
+    margin: 5px;
+    width: 20%;
+}
+#restart-button {
+    margin: 5px;
+    width: 20%;
+}
